@@ -1,5 +1,3 @@
-// Run with: npm run seed
-// Inserts a handful of sample jobs so the board isn't empty on first run.
 require("dotenv").config();
 const mongoose = require("mongoose");
 const Job = require("../models/Job");

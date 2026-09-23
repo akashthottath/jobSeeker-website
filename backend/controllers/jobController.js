@@ -1,6 +1,5 @@
 const Job = require("../models/Job");
 
-// GET /jobs  (optional ?category=Design query param)
 const getJobs = async (req, res) => {
   try {
     const filter = {};
@@ -15,7 +14,6 @@ const getJobs = async (req, res) => {
   }
 };
 
-// POST /jobs
 const createJob = async (req, res) => {
   try {
     const { title, company, category, location, description } = req.body;
